@@ -25,6 +25,18 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.npmjs_username %}
+          <li>
+            {% include icon-npmjs.html username=site.npmjs_username %}
+          </li>
+          {% endif %}
+
+          {% if site.gitbook_username %}
+          <li>
+            {% include icon-gitbook.html username=site.gitbook_username %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 
