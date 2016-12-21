@@ -12,9 +12,10 @@
 
 -   title_en: A Brief History of Node.js
     title_cn: 闲话 Node.js
-    local: iter.tips
+    local: nodejs.history
     gitbook: https://youngoat.gitbooks.io/a-brief-history-of-node-js/details
 
 -   title_en: Live As An ITer
     title_cn: 闲话 ITer
+    local: iter.tips
     gitbook: https://www.gitbook.com/book/youngoat/live-as-an-iter/details

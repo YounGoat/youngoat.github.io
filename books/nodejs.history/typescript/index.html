@@ -1,0 +1,754 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>TypeScript · A Brief History Of Node.js</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tsconfig.html" />
+    
+    
+    <link rel="prev" href="../reactjs/tutorial.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://youngoat.github.io" target="_blank" class="custom-link">HOME</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basic.html">
+            
+                <a href="../basic.html">
+            
+                    
+                    基础篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../generator-function.html">
+            
+                <a href="../generator-function.html">
+            
+                    
+                    生成函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../install.html">
+            
+                <a href="../install.html">
+            
+                    
+                    安装和卸载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../npm/npm.html">
+            
+                <a href="../npm/npm.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../npm/npm.scripts.html">
+            
+                <a href="../npm/npm.scripts.html">
+            
+                    
+                    scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../npm/npm3.html">
+            
+                <a href="../npm/npm3.html">
+            
+                    
+                    NPM3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../angularjs/">
+            
+                <a href="../angularjs/">
+            
+                    
+                    AngularJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../json-schema.html">
+            
+                <a href="../json-schema.html">
+            
+                    
+                    JSON Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../jsx/">
+            
+                <a href="../jsx/">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../jsx/dena.md">
+            
+                <span>
+            
+                    
+                    JSX @DeNA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../jsx/react.html">
+            
+                <a href="../jsx/react.html">
+            
+                    
+                    JSX @React @Facebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../reactjs/">
+            
+                <a href="../reactjs/">
+            
+                    
+                    ReactJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../reactjs/starter-kit.html">
+            
+                <a href="../reactjs/starter-kit.html">
+            
+                    
+                    Start With Starter Kit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../reactjs/tutorial.html">
+            
+                <a href="../reactjs/tutorial.html">
+            
+                    
+                    Start With Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="tsconfig.html">
+            
+                <a href="tsconfig.html">
+            
+                    
+                    Project Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="tools.html">
+            
+                <a href="tools.html">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../frameworks.html">
+            
+                <a href="../frameworks.html">
+            
+                    
+                    PACKAGE·框架篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../expressjs.html">
+            
+                <a href="../expressjs.html">
+            
+                    
+                    express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../clis.html">
+            
+                <a href="../clis.html">
+            
+                    
+                    PACKAGE·命令/工具篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../mocha.html">
+            
+                <a href="../mocha.html">
+            
+                    
+                    Mocha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../pm2.html">
+            
+                <a href="../pm2.html">
+            
+                    
+                    pm2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../components.html">
+            
+                <a href="../components.html">
+            
+                    
+                    PACKAGE·组件篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../utilities.html">
+            
+                <a href="../utilities.html">
+            
+                    
+                    PACKAGE·功能篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../ajv.html">
+            
+                <a href="../ajv.html">
+            
+                    
+                    ajv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../glob,minimatch.html">
+            
+                <a href="../glob,minimatch.html">
+            
+                    
+                    glob, minimatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../request.html">
+            
+                <a href="../request.html">
+            
+                    
+                    request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../subject.html">
+            
+                <a href="../subject.html">
+            
+                    
+                    专题·HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../http-server.html">
+            
+                <a href="../http-server.html">
+            
+                    
+                    HTTP Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../http-post.html">
+            
+                <a href="../http-post.html">
+            
+                    
+                    HTTP POST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >TypeScript</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="typescript">TypeScript</h1>
+<h2 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+<ol>
+<li><p><strong>&#x51C6;&#x5907;&#x7D20;&#x6750;</strong></p>
+<blockquote>
+<p>   TypeScript starts from the same syntax and semantics that millions of JavaScript developers know today.</p>
+</blockquote>
+<p><em>TypeScript</em> &#x662F; <em>JavaScript</em> &#x7684;&#x8D85;&#x96C6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x5B8C;&#x5168;&#x517C;&#x5BB9;&#x540E;&#x8005;&#x7684;&#x8BED;&#x6CD5;&#x548C;&#x8BED;&#x4E49;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x51C6;&#x5907;&#x7684;&#x7D20;&#x6750;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x6BB5;&#x6700;&#x7B80;&#x5355;&#x7684; JS &#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x8D4B;&#x4E88;&#x4EE3;&#x7801;&#x6587;&#x4EF6; .ts &#x540E;&#x7F00;&#x540D;&#xFF0C;&#x4EE3;&#x8868;&#x8FD9;&#x662F;&#x4E00;&#x4E2A; TypeScript &#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/* hello.ts */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">main</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Hello world!&apos;</span>);
+}
+
+main();
+</code></pre>
+</li>
+<li><p><strong>&#x5B89;&#x88C5;&#x5DE5;&#x5177;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x884C;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;&#xFF0C;&#x521B;&#x5EFA;&#x5168;&#x5C40;&#x547D;&#x4EE4; tsc</span>
+npm install -g typescript
+
+<span class="hljs-comment"># * &#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF08;&#x6BD4;&#x5982; Atom&#xFF09;&#xFF0C;&#x5B89;&#x88C5;&#x76F8;&#x5E94;&#x7684;&#x652F;&#x6301;&#x7EC4;&#x4EF6;</span>
+apm install atom-typescript
+
+<span class="hljs-comment"># &#x6267;&#x884C;&#x7F16;&#x8BD1;</span>
+tsc hello.ts
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#xFF1A;&#x5C06;&#x521B;&#x5EFA;&#x540C;&#x540D; .js &#x6587;&#x4EF6;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x4E86;&#x89E3;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;</strong></p>
+<p><a href="http://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html" target="_blank">http://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html</a></p>
+</li>
+</ol>
+<h2 id="&#x5728;&#x7EBF;&#x8D44;&#x6E90;">&#x5728;&#x7EBF;&#x8D44;&#x6E90;</h2>
+<ul>
+<li><p>&#x5B98;&#x65B9;&#x7F51;&#x7AD9;<br><a href="http://www.typescriptlang.org" target="_blank">http://www.typescriptlang.org</a></p>
+</li>
+<li><p><em>Handbook</em><br><a href="http://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">http://www.typescriptlang.org/docs/handbook/basic-types.html</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../reactjs/tutorial.html" class="navigation navigation-prev " aria-label="Previous page: Start With Tutorial">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tsconfig.html" class="navigation navigation-next " aria-label="Next page: Project Config">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TypeScript","level":"2.5","depth":1,"next":{"title":"Project Config","level":"2.5.1","depth":2,"path":"typescript/tsconfig.md","ref":"typescript/tsconfig.md","articles":[]},"previous":{"title":"Start With Tutorial","level":"2.4.2","depth":2,"path":"reactjs/tutorial.md","ref":"reactjs/tutorial.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"A Brief History Of Node.js","links":{"sidebar":{"HOME":"https://youngoat.github.io"}},"gitbook":"*"},"file":{"path":"typescript/index.md","mtime":"2016-12-21T21:11:32.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-12-21T21:49:38.731Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
