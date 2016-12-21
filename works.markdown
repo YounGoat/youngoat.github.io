@@ -25,6 +25,10 @@ permalink: /works/
 	{% endfor %}
 </ul>
 
+<small>
+See my profile at GitBook for more books:  
+[https://www.gitbook.com/@youngoat](https://www.gitbook.com/@youngoat)
+</small>
 
 ### Node.js Products
 
@@ -33,3 +37,9 @@ permalink: /works/
 
 *   *yuan-console*  
     <small>NodeJS SDK for CLI development</small>
+
+<small>
+See my profile at NPM for more packages:  
+*	[https://www.npmjs.com/~youngoat](https://www.npmjs.com/~youngoat)  
+*	[https://www.npmjs.com/~youngoat.elite](https://www.npmjs.com/~youngoat.elite)  
+</small>
