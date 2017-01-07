@@ -11,7 +11,7 @@
 blockquote * {
 	font-family: consolas, Yuanti SC, "微软雅黑";
 	font-style: italic;
-	letter-spacing: 0;
+	letter-spacing: 0em;
 }
 
 code * {
