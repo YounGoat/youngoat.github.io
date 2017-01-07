@@ -1,0 +1,611 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>矢量数据 · A Cup Of JAVA</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-catalog/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="generics.html" />
+    
+    
+    <link rel="prev" href="types.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://youngoat.github.io" target="_blank" class="custom-link">HOME</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart/">
+            
+                <a href="../quickstart/">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quickstart/package.html">
+            
+                <a href="../quickstart/package.html">
+            
+                    
+                    包的创建与管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    安装与配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../install/mac.html">
+            
+                <a href="../install/mac.html">
+            
+                    
+                    Mac OS X
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools/idea/">
+            
+                <a href="../tools/idea/">
+            
+                    
+                    JetBrains IntelliJ IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../tools/idea/tips.html">
+            
+                <a href="../tools/idea/tips.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools/maven/">
+            
+                <a href="../tools/maven/">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../tools/maven/quickstart.html">
+            
+                <a href="../tools/maven/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../tools/maven/plugins.html">
+            
+                <a href="../tools/maven/plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../tools/repl.html">
+            
+                <a href="../tools/repl.html">
+            
+                    
+                    Java REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    类型与类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="vectors.html">
+            
+                <a href="vectors.html">
+            
+                    
+                    矢量数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../classes/">
+            
+                <a href="../classes/">
+            
+                    
+                    类与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../snippets/">
+            
+                <a href="../snippets/">
+            
+                    
+                    代码片断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../snippets/io.html">
+            
+                <a href="../snippets/io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../history/">
+            
+                <a href="../history/">
+            
+                    
+                    历史
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../history/java9.html">
+            
+                <a href="../history/java9.html">
+            
+                    
+                    Java 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../terms.html">
+            
+                <a href="../terms.html">
+            
+                    
+                    概念与术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >矢量数据</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x77E2;&#x91CF;&#x6570;&#x636E;">&#x77E2;&#x91CF;&#x6570;&#x636E;</h1>
+<p><em>java.util</em> &#x63D0;&#x4F9B;&#x4E86;&#x6570;&#x4EE5;&#x767E;&#x8BA1;&#x7684;&#x590D;&#x6742;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x5E38;&#x7528;&#x7684;&#x77E2;&#x91CF;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.util.Vector;
+<span class="hljs-keyword">import</span> java.util.Enumeration;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EnumerationTester</span> </span>{
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+      Enumeration days;
+      Vector dayNames = <span class="hljs-keyword">new</span> Vector();
+
+      dayNames.add(<span class="hljs-string">&quot;Sunday&quot;</span>);
+      dayNames.add(<span class="hljs-string">&quot;Monday&quot;</span>);
+      dayNames.add(<span class="hljs-string">&quot;Tuesday&quot;</span>);
+      dayNames.add(<span class="hljs-string">&quot;Wednesday&quot;</span>);
+      dayNames.add(<span class="hljs-string">&quot;Thursday&quot;</span>);
+      dayNames.add(<span class="hljs-string">&quot;Friday&quot;</span>);
+      dayNames.add(<span class="hljs-string">&quot;Saturday&quot;</span>);
+      days = dayNames.elements();
+
+      <span class="hljs-keyword">while</span> (days.hasMoreElements()) {
+         System.out.println(days.nextElement());
+      }
+   }
+}
+
+<span class="hljs-comment">// &#x4EE3;&#x7801;&#x5F15;&#x81EA; https://www.tutorialspoint.com/java/java_enumeration_interface.htm</span>
+</code></pre>
+<h2 id="see">See</h2>
+<ul>
+<li><em>Java - Collections Framework</em><br><a href="https://www.tutorialspoint.com/java/java_collections.htm" target="_blank">https://www.tutorialspoint.com/java/java_collections.htm</a></li>
+</ul>
+<script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?14e1e69c9ea9f2f43cbf24b5257e7205';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="types.html" class="navigation navigation-prev " aria-label="Previous page: 类型与类型转换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="generics.html" class="navigation navigation-next " aria-label="Next page: 泛型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"矢量数据","level":"1.5.2","depth":2,"next":{"title":"泛型","level":"1.5.3","depth":2,"path":"syntax/generics.md","ref":"syntax/generics.md","articles":[]},"previous":{"title":"类型与类型转换","level":"1.5.1","depth":2,"path":"syntax/types.md","ref":"syntax/types.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","catalog","ba","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":2},"highlight":{},"catalog":{},"ga":{"configuration":"auto","token":"UA-80152063-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"ba":{"token":"14e1e69c9ea9f2f43cbf24b5257e7205"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"A Cup Of JAVA","links":{"sidebar":{"HOME":"https://youngoat.github.io"}},"gitbook":"*"},"file":{"path":"syntax/vectors.md","mtime":"2017-01-06T09:51:24.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-01-07T15:25:16.302Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-catalog/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

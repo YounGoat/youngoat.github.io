@@ -1,0 +1,34 @@
+* {
+	font-family: "Source Sans Pro", "Lucida Grande", Helvetica, Arial, "Palatino Linotype", "微软雅黑";
+}
+
+.normal {
+	/* color: #05173B; /* 蓝黑 */
+	/* color: #7E8282; /* 铅灰 */
+	color: #544946; /* 黑灰 */
+}
+
+blockquote * {
+	font-family: consolas, Yuanti SC, "微软雅黑";
+	font-style: italic;
+}
+
+code * {
+	font-family: consolas;
+}
+
+h1 {
+	color: #00B38C;
+}
+
+h2 {
+	color: #00B0F0;
+}
+
+h3 {
+	color: #82ABBA;
+}
+
+h4 {
+	color: #A2B4BA;
+}

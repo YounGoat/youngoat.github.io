@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      {
+        "name": "gitbook-plugin-catalog",
+        "raw": "gitbook-plugin-catalog@0.1.2",
+        "rawSpec": "0.1.2",
+        "scope": null,
+        "spec": "0.1.2",
+        "type": "version"
+      },
+      "/Users/jiangjing/JPO/WorkingSpace/YUAN.book/a-cup-of-java"
+    ]
+  ],
+  "_cnpm_publish_time": 1417151448161,
+  "_from": "gitbook-plugin-catalog@0.1.2",
+  "_id": "gitbook-plugin-catalog@0.1.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gitbook-plugin-catalog",
+  "_npmUser": {
+    "email": "ksky521@gmail.com",
+    "name": "ksky521"
+  },
+  "_npmVersion": "1.3.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "gitbook-plugin-catalog",
+    "raw": "gitbook-plugin-catalog@0.1.2",
+    "rawSpec": "0.1.2",
+    "scope": null,
+    "spec": "0.1.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-catalog/-/gitbook-plugin-catalog-0.1.2.tgz",
+  "_shasum": "d358bdfacb1cbe9e08af95f4f0be5c858b454758",
+  "_shrinkwrap": null,
+  "_spec": "gitbook-plugin-catalog@0.1.2",
+  "_where": "/Users/jiangjing/JPO/WorkingSpace/YUAN.book/a-cup-of-java",
+  "author": {
+    "email": "ksky521@gmail.com",
+    "name": "Theo Wang"
+  },
+  "bugs": {
+    "url": "https://github.com/ksky521/gitbook-plugin-catalog/issues"
+  },
+  "dependencies": {
+    "cheerio": "*",
+    "underscore": "*"
+  },
+  "description": "Add catalog to your Gitbook",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "d358bdfacb1cbe9e08af95f4f0be5c858b454758",
+    "size": 3536,
+    "tarball": "http://registry.npm.taobao.org/gitbook-plugin-catalog/download/gitbook-plugin-catalog-0.1.2.tgz"
+  },
+  "engines": {
+    "gitbook": "*"
+  },
+  "homepage": "https://github.com/ksky521/gitbook-plugin-catalog",
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "ksky521@gmail.com",
+      "name": "ksky521"
+    }
+  ],
+  "name": "gitbook-plugin-catalog",
+  "optionalDependencies": {},
+  "publish_time": 1417151448161,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksky521/gitbook-plugin-catalog.git"
+  },
+  "version": "0.1.2"
+}

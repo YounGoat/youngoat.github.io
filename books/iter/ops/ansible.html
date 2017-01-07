@@ -1,0 +1,826 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Ansible · 假装我是 IT 人</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-catalog/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../doc/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../SUMMARY.html">
+            
+                <a href="../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../cli/">
+            
+                <a href="../cli/">
+            
+                    
+                    命令行界面
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cli/mingw.html">
+            
+                <a href="../cli/mingw.html">
+            
+                    
+                    MinGW
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../package-manager/">
+            
+                <a href="../package-manager/">
+            
+                    
+                    软件管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../package-manager/chocolatey.html">
+            
+                <a href="../package-manager/chocolatey.html">
+            
+                    
+                    Chocolatey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../programme/">
+            
+                <a href="../programme/">
+            
+                    
+                    程序设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../programme/design-pattern.html">
+            
+                <a href="../programme/design-pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../editor/">
+            
+                <a href="../editor/">
+            
+                    
+                    文本编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../editor/atom.html">
+            
+                <a href="../editor/atom.html">
+            
+                    
+                    Atom, by GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../useragent/">
+            
+                <a href="../useragent/">
+            
+                    
+                    用户代理，浏览器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../useragent/chrome.html">
+            
+                <a href="../useragent/chrome.html">
+            
+                    
+                    Chrome
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../domain-language/">
+            
+                <a href="../domain-language/">
+            
+                    
+                    领域语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../markup/">
+            
+                <a href="../markup/">
+            
+                    
+                    标记语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../repo/">
+            
+                <a href="../repo/">
+            
+                    
+                    代码仓库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../repo/git.html">
+            
+                <a href="../repo/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../repo/github.html">
+            
+                <a href="../repo/github.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../db/mysql.html">
+            
+                <a href="../db/mysql.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    运维自动化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.12.1" data-path="ansible.html">
+            
+                <a href="ansible.html">
+            
+                    
+                    Ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../doc/">
+            
+                <a href="../doc/">
+            
+                    
+                    文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../doc/gitbook.html">
+            
+                <a href="../doc/gitbook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../doc/sphinx.html">
+            
+                <a href="../doc/sphinx.html">
+            
+                    
+                    Sphinx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../frontend/">
+            
+                <a href="../frontend/">
+            
+                    
+                    前端框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../frontend/angular.html">
+            
+                <a href="../frontend/angular.html">
+            
+                    
+                    Angular
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../crypto/">
+            
+                <a href="../crypto/">
+            
+                    
+                    数据加密
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../crypto/argot.html">
+            
+                <a href="../crypto/argot.html">
+            
+                    
+                    他们在说什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../crypto/digest.html">
+            
+                <a href="../crypto/digest.html">
+            
+                    
+                    数据摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../crypto/law.html">
+            
+                <a href="../crypto/law.html">
+            
+                    
+                    法律法规
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../mq/">
+            
+                <a href="../mq/">
+            
+                    
+                    消息队列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../mq/kafka.html">
+            
+                <a href="../mq/kafka.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../net/">
+            
+                <a href="../net/">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../net/communicate.html">
+            
+                <a href="../net/communicate.html">
+            
+                    
+                    通信，说与听
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../ref/">
+            
+                <a href="../ref/">
+            
+                    
+                    附，他山之石
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../ref/misc.html">
+            
+                <a href="../ref/misc.html">
+            
+                    
+                    学海拾贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Ansible</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="theo-nav"><div class="theo-content" id="theo-content"><ul>
+<li data-level="1">
+<a href="#Ansible0" data-id="Ansible0">Ansible</a>
+<ul>
+<li data-level="2">
+<a href="#E6_80_8E_E6_A0_B7_E6_94_AF_E6_8C_81_E4_BD_BF_E7_94_A8_E5_AF_86_E7_A0_81_E7_99_BB_E5_BD_95_E8_BF_9C_E7_AB_AF_E6_9C_8D_E5_8A_A1_E5_99_A8_EF_BC_9F1" data-id="E6_80_8E_E6_A0_B7_E6_94_AF_E6_8C_81_E4_BD_BF_E7_94_A8_E5_AF_86_E7_A0_81_E7_99_BB_E5_BD_95_E8_BF_9C_E7_AB_AF_E6_9C_8D_E5_8A_A1_E5_99_A8_EF_BC_9F1">&#x600E;&#x6837;&#x652F;&#x6301;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#xFF1F;</a>
+</li>
+</ul>
+</li>
+</ul></div><a title="&#x5C55;&#x5F00;/&#x5173;&#x95ED;&#x672C;&#x9875;&#x76EE;&#x5F55;" href="####" id="theo-nav-btn" class="fa fa-list-ul"> </a><a title="&#x8FD4;&#x56DE;&#x9876;&#x90E8;" href="####" id="theo-top-btn" class="fa fa-arrow-up"> </a></div><h1 id="Ansible0"><a name="Ansible0" class="plugin-anchor" href="#Ansible0"><span class="fa fa-link"></span></a>Ansible</h1>
+<h2 id="E6_80_8E_E6_A0_B7_E6_94_AF_E6_8C_81_E4_BD_BF_E7_94_A8_E5_AF_86_E7_A0_81_E7_99_BB_E5_BD_95_E8_BF_9C_E7_AB_AF_E6_9C_8D_E5_8A_A1_E5_99_A8_EF_BC_9F1"><a name="E6_80_8E_E6_A0_B7_E6_94_AF_E6_8C_81_E4_BD_BF_E7_94_A8_E5_AF_86_E7_A0_81_E7_99_BB_E5_BD_95_E8_BF_9C_E7_AB_AF_E6_9C_8D_E5_8A_A1_E5_99_A8_EF_BC_9F1" class="plugin-anchor" href="#E6_80_8E_E6_A0_B7_E6_94_AF_E6_8C_81_E4_BD_BF_E7_94_A8_E5_AF_86_E7_A0_81_E7_99_BB_E5_BD_95_E8_BF_9C_E7_AB_AF_E6_9C_8D_E5_8A_A1_E5_99_A8_EF_BC_9F1"><span class="fa fa-link"></span></a>&#x600E;&#x6837;&#x652F;&#x6301;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#xFF1F;</h2>
+<p>&#x5728;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x914D;&#x7F6E;&#x8BC1;&#x4E66;&#x516C;&#x94A5;&#xFF0C;&#x662F;&#x7ECF;&#x5178;&#x7684;&#x6388;&#x6743;&#x65B9;&#x5F0F;&#x3002;&#x4F46;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># Registered from hosts inventory.</span>
+[all:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=password
+ansible_ssh_port=22
+</code></pre>
+<p>&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code class="lang-bash">ansible all -m ping
+<span class="hljs-comment"># OUTPUT:</span>
+<span class="hljs-comment"># 10.0.0.100 | FAILED! =&gt; {</span>
+<span class="hljs-comment">#    &quot;failed&quot;: true,</span>
+<span class="hljs-comment">#    &quot;msg&quot;: &quot;to use the &apos;ssh&apos; connection type with passwords, you must install the sshpass program&quot;</span>
+<span class="hljs-comment"># }</span>
+</code></pre>
+<p>&#x5B89;&#x88C5; sshpass &#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x901A;&#x8FC7; YUM &#x5B89;&#x88C5;</span>
+yum install sshpass
+
+<span class="hljs-comment"># &#x68C0;&#x67E5;&#x5B89;&#x88C5;&#x7ED3;&#x679C;</span>
+sshpass -V
+<span class="hljs-comment"># sshpass 1.05 (C) 2006-2011 Lingnu Open Source Consulting Ltd.</span>
+<span class="hljs-comment"># This program is free software, and can be distributed under the terms of the GPL</span>
+<span class="hljs-comment"># See the COPYING file for more information.</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 运维自动化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../doc/" class="navigation navigation-next " aria-label="Next page: 文档">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ansible","level":"1.12.1","depth":2,"next":{"title":"文档","level":"1.13","depth":1,"path":"doc/index.md","ref":"doc/index.md","articles":[{"title":"GitBook","level":"1.13.1","depth":2,"path":"doc/gitbook.md","ref":"doc/gitbook.md","articles":[]},{"title":"Sphinx","level":"1.13.2","depth":2,"path":"doc/sphinx.md","ref":"doc/sphinx.md","articles":[]}]},"previous":{"title":"运维自动化","level":"1.12","depth":1,"path":"ops/index.md","ref":"ops/index.md","articles":[{"title":"Ansible","level":"1.12.1","depth":2,"path":"ops/ansible.md","ref":"ops/ansible.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","catalog","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"catalog":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"TITLE":"假装我是 IT 人"},"title":"假装我是 IT 人","gitbook":"*"},"file":{"path":"ops/ansible.md","mtime":"2016-11-03T04:30:24.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-12-30T06:31:06.284Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-catalog/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

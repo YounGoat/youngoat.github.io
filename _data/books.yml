@@ -1,21 +1,31 @@
 -   title_en: yuan, an easy way from anything else to ECMAScript
     title_cn: yuan, 轻松走向 ECMAScript
-    gitbook: https://www.gitbook.com/book/youngoat/ecmascript-yuan/details
+    gitbook: https://youngoat.gitbooks.io/ecmascript-yuan/
 
 -   title_en: yuan-console, An Easy Way to The Console World
     title_cn: yuan-console, 掌控命令行
-    gitbook: https://www.gitbook.com/book/youngoat/nodejs-yuan-console/details
+    gitbook: https://youngoat.gitbooks.io/nodejs-yuan-console/
 
 -   title_en: Moles Unprofessional Guide
     title_cn: Moles 非权威指南
-    gitbook: https://www.gitbook.com/book/youngoat/moles-unprofessional-guide/details
+    gitbook: https://youngoat.gitbooks.io/moles-unprofessional-guide/
 
 -   title_en: A Brief History of Node.js
     title_cn: 闲话 Node.js
-    local: nodejs.history
-    gitbook: https://youngoat.gitbooks.io/a-brief-history-of-node-js/details
+    local: nodejs
+    gitbook: https://youngoat.gitbooks.io/a-brief-history-of-node-js/
 
 -   title_en: Live As An ITer
     title_cn: 闲话 ITer
-    local: iter.tips
-    gitbook: https://www.gitbook.com/book/youngoat/live-as-an-iter/details
+    local: iter
+    gitbook: https://youngoat.gitbooks.io/live-as-an-iter/
+
+-   title_en: Make My Mac
+    title_cn: 我和我的 Mac OS X
+    local: m3
+    gitbook: https://youngoat.gitbooks.io/m3/
+
+-   title_en: A Cup Of Java
+    title_cn: 一杯 Java
+    local: java
+    gitbook: https://youngoat.gitbooks.io/java/

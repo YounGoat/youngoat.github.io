@@ -1,0 +1,615 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>语法 · A Cup Of JAVA</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-catalog/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="types.html" />
+    
+    
+    <link rel="prev" href="../tools/repl.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://youngoat.github.io" target="_blank" class="custom-link">HOME</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart/">
+            
+                <a href="../quickstart/">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quickstart/package.html">
+            
+                <a href="../quickstart/package.html">
+            
+                    
+                    包的创建与管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    安装与配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../install/mac.html">
+            
+                <a href="../install/mac.html">
+            
+                    
+                    Mac OS X
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../tools/idea/">
+            
+                <a href="../tools/idea/">
+            
+                    
+                    JetBrains IntelliJ IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../tools/idea/tips.html">
+            
+                <a href="../tools/idea/tips.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../tools/maven/">
+            
+                <a href="../tools/maven/">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../tools/maven/quickstart.html">
+            
+                <a href="../tools/maven/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../tools/maven/plugins.html">
+            
+                <a href="../tools/maven/plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../tools/repl.html">
+            
+                <a href="../tools/repl.html">
+            
+                    
+                    Java REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    类型与类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="vectors.html">
+            
+                <a href="vectors.html">
+            
+                    
+                    矢量数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../classes/">
+            
+                <a href="../classes/">
+            
+                    
+                    类与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../snippets/">
+            
+                <a href="../snippets/">
+            
+                    
+                    代码片断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../snippets/io.html">
+            
+                <a href="../snippets/io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../history/">
+            
+                <a href="../history/">
+            
+                    
+                    历史
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../history/java9.html">
+            
+                <a href="../history/java9.html">
+            
+                    
+                    Java 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../terms.html">
+            
+                <a href="../terms.html">
+            
+                    
+                    概念与术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="java-&#x8BED;&#x6CD5;">Java &#x8BED;&#x6CD5;</h1>
+<h2 id="&#x5728;&#x7EBF;&#x8D44;&#x6E90;">&#x5728;&#x7EBF;&#x8D44;&#x6E90;</h2>
+<ul>
+<li><p><em>Java - Quick Guide</em><br><a href="http://www.tutorialspoint.com/java/java_quick_guide.htm" target="_blank">http://www.tutorialspoint.com/java/java_quick_guide.htm</a></p>
+</li>
+<li><p><em>A Quick, Painless Introduction to the Java Programming Language</em><br><a href="http://heather.cs.ucdavis.edu/~matloff/Java/JavaIntro.html" target="_blank">http://heather.cs.ucdavis.edu/~matloff/Java/JavaIntro.html</a><br><a href="http://pdfsr.com/pdf/a-quick-painless-introduction-to-the-java-programming-language" target="_blank">http://pdfsr.com/pdf/a-quick-painless-introduction-to-the-java-programming-language</a></p>
+<p>&#x8FD9;&#x662F;<a href="https://www.ucdavis.edu" target="_blank">&#x52A0;&#x5DDE;&#x5927;&#x5B66;&#x6234;&#x7EF4;&#x65AF;&#x5206;&#x6821;</a><sup><a href="#fn_1" id="reffn_1">1</a></sup><a href="https://faculty.engineering.ucdavis.edu" target="_blank">&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x7CFB;</a>&#x6559;&#x6388; <a href="https://faculty.engineering.ucdavis.edu/matloff/" target="_blank">Norman S. Matloff</a> 2005&#x5E74;&#x7684;&#x4F5C;&#x54C1;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x9898;&#x5916;&#x8BDD;">&#x9898;&#x5916;&#x8BDD;</h2>
+<h3 id="norman-matloff">Norman Matloff</h3>
+<p>Matloff &#x70ED;&#x8877;&#x79D1;&#x666E;&#xFF0C;&#x81EA;&#x521B;&#x4E86; <em>Quick, Painless</em> &#x7684; IP&#xFF0C;&#x5E76;&#x64B0;&#x5199;&#x8FC7;&#x4E0D;&#x5C11;&#x5165;&#x95E8;&#x6559;&#x7A0B;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li><p><em>Professor Norm Matloff&apos;s Beginner&apos;s Guide to Installing Linux</em><br><a href="http://heather.cs.ucdavis.edu/~matloff/linux.html" target="_blank">http://heather.cs.ucdavis.edu/~matloff/linux.html</a></p>
+</li>
+<li><p><em>Fast Lane to Python<br>A quick, sensible route to the joys of Python coding</em><br><a href="http://heather.cs.ucdavis.edu/~matloff/Python/PLN/FastLanePython.pdf" target="_blank">http://heather.cs.ucdavis.edu/~matloff/Python/PLN/FastLanePython.pdf</a></p>
+</li>
+</ul>
+<p>&#x5982;&#x679C;&#x751F;&#x5728;&#x4E2D;&#x56FD;&#xFF0C;&#x5927;&#x6982;&#x4E5F;&#x4F1A;&#x6210;&#x4E3A;&#x7A0B;&#x5E8F;&#x5458;&#x5708;&#x5B50;&#x4E2D;&#x7684;&#x7F51;&#x7EA2;&#x4E00;&#x679A;&#x3002;&#x6709;&#x8DA3;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4F4D;&#x5927;&#x5496;&#x5BF9;&#x6C49;&#x8BED;&#x9887;&#x6709;&#x7814;&#x7A76;&#xFF0C;&#x8FD8;&#x5F00;&#x53D1;&#x8FC7;&#x4E00;&#x6B3E;&#x6C49;&#x8BED;&#x5B66;&#x4E60;&#x8F6F;&#x4EF6; <em>KuaiXue</em>&#xFF0C;&#x5E76;&#x4E14;&#x81EA;&#x79F0;&#x662F;&#x6DF7;&#x5510;&#x4EBA;&#x8857;&#x7684;&#xFF1A;</p>
+<ul>
+<li><em>Norman Matloff&apos;s Chinese Software Web Site</em><br><a href="http://heather.cs.ucdavis.edu/chinese.html" target="_blank">http://heather.cs.ucdavis.edu/chinese.html</a><br><a href="http://heather.cs.ucdavis.edu/~matloff/chinese.html" target="_blank">http://heather.cs.ucdavis.edu/~matloff/chinese.html</a>  </li>
+</ul>
+<p>&#x5728;&#x4ED6;&#x7684;&#x5B66;&#x6821;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x5927;&#x91CF;&#x7684;&#x5404;&#x79CD;&#x7684; Tutorial:</p>
+<ul>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/java.html" target="_blank"><em>Professor Matloff&apos;s Java Beginners&apos; Web Page</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/latex.html" target="_blank"><em>Norm Matloff&apos;s LATEX  Tutorial Site</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/linux.html" target="_blank"><em>Professor Norm Matloff&apos;s Beginner&apos;s Guide to Installing Linux</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/python.html" target="_blank"><em>Norm Matloff&apos;s Quick Python Tutorials</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/perl.html" target="_blank"><em>Norm Matloff&apos;s Introduction to the Perl Language</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/r.html" target="_blank"><em>Getting Started with the R Data Analysis Package</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/unix.html" target="_blank"><em>Norman Matloff&apos;s Unix and Linux Tutorial Center</em></a></li>
+<li><a href="http://heather.cs.ucdavis.edu/~matloff/hadoop.html" target="_blank"><em>Getting Started with Hadoop at UC Davis</em></a></li>
+</ul>
+<blockquote id="fn_1">
+<sup>1</sup>. &#x201C;&#x52A0;&#x5DDE;&#x5927;&#x5B66;&#x201D;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x6240;&#x5927;&#x5B66;&#xFF0C;&#x800C;&#x662F;&#x7531;&#x4E00;&#x4E2A;&#x7F8E;&#x56FD;&#x52A0;&#x5229;&#x798F;&#x5C3C;&#x4E9A;&#x5DDE;&#x5341;&#x6240;&#x516C;&#x7ACB;&#x5927;&#x5B66;&#x7EC4;&#x6210;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x6240;&#x8C13;&#x7684;&#x201C;&#x5206;&#x6821;&#x201D;&#x6216;&#x201C;&#x6821;&#x533A;&#x201D;&#x624D;&#x662F;&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x72EC;&#x7ACB;&#x7684;&#x5927;&#x5B66;&#x3002;&#x6211;&#x4EEC;&#x5E38;&#x542C;&#x8BF4;&#x7684;&#x201C;&#x52A0;&#x5DDE;&#x5927;&#x5B66;&#x4F2F;&#x514B;&#x5229;&#x5206;&#x6821;&#x201D;&#x4E4B;&#x4E8E;&#x52A0;&#x5DDE;&#x5927;&#x5B66;&#xFF0C;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x7C7B;&#x4F3C;&#x82F1;&#x56FD;&#x4E4B;&#x4E8E;&#x82F1;&#x8054;&#x90A6;&#x3002;&#x6234;&#x7EF4;&#x65AF;&#x5EFA;&#x6821;&#x8F83;&#x665A;&#xFF08;1959&#x5E74;&#xFF09;&#xFF0C;&#x81F3;&#x4ECA;&#x4E0D;&#x80FD;&#x79F0;&#x767E;&#x5E74;&#xFF0C;&#x5B66;&#x672F;&#x6392;&#x540D;&#x5374;&#x5E38;&#x5E74;&#x7A33;&#x5C45;&#x4E16;&#x754C;&#x767E;&#x5F3A;&#x4E4B;&#x5217;&#xFF0C;&#x5B9E;&#x529B;&#x4E0D;&#x5BB9;&#x5C0F;&#x89D1;&#x3002;<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<script>var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = '//hm.baidu.com/hm.js?14e1e69c9ea9f2f43cbf24b5257e7205';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(hm, s);})();</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../tools/repl.html" class="navigation navigation-prev " aria-label="Previous page: Java REPL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="types.html" class="navigation navigation-next " aria-label="Next page: 类型与类型转换">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"语法","level":"1.5","depth":1,"next":{"title":"类型与类型转换","level":"1.5.1","depth":2,"path":"syntax/types.md","ref":"syntax/types.md","articles":[]},"previous":{"title":"Java REPL","level":"1.4.3","depth":2,"path":"tools/repl.md","ref":"tools/repl.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","catalog","ba","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":2},"highlight":{},"catalog":{},"ga":{"configuration":"auto","token":"UA-80152063-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"ba":{"token":"14e1e69c9ea9f2f43cbf24b5257e7205"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"A Cup Of JAVA","links":{"sidebar":{"HOME":"https://youngoat.github.io"}},"gitbook":"*"},"file":{"path":"syntax/index.md","mtime":"2017-01-06T09:50:28.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-01-07T15:25:16.302Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-catalog/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
