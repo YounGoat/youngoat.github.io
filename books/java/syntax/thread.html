@@ -1,0 +1,966 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>线程与多线程 · A Cup Of JAVA</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-catalog/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../subject/" />
+    
+    
+    <link rel="prev" href="servlet.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://youngoat.github.io" target="_blank" class="custom-link">HOME</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../history/">
+            
+                <a href="../history/">
+            
+                    
+                    历史与趋势
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../history/java8.html">
+            
+                <a href="../history/java8.html">
+            
+                    
+                    Java 8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../history/java9.html">
+            
+                <a href="../history/java9.html">
+            
+                    
+                    Java 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../history/openjdk.html">
+            
+                <a href="../history/openjdk.html">
+            
+                    
+                    OpenJDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../basic/">
+            
+                <a href="../basic/">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basic/jar.html">
+            
+                <a href="../basic/jar.html">
+            
+                    
+                    jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basic/javadoc.html">
+            
+                <a href="../basic/javadoc.html">
+            
+                    
+                    javadoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    安装与配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../install/mac.html">
+            
+                <a href="../install/mac.html">
+            
+                    
+                    Mac OS X
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    工具和软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../tools/idea/">
+            
+                <a href="../tools/idea/">
+            
+                    
+                    JetBrains IntelliJ IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../tools/idea/tips.html">
+            
+                <a href="../tools/idea/tips.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../tools/jetty/">
+            
+                <a href="../tools/jetty/">
+            
+                    
+                    Jetty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../tools/maven/">
+            
+                <a href="../tools/maven/">
+            
+                    
+                    Maven
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../tools/maven/quickstart.html">
+            
+                <a href="../tools/maven/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../tools/maven/plugins.html">
+            
+                <a href="../tools/maven/plugins.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../tools/repl.html">
+            
+                <a href="../tools/repl.html">
+            
+                    
+                    Java REPL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    类型与类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    Annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="applet.html">
+            
+                <a href="applet.html">
+            
+                    
+                    Applet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="array-and-collection.html">
+            
+                <a href="array-and-collection.html">
+            
+                    
+                    数组与集合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="vectors.html">
+            
+                <a href="vectors.html">
+            
+                    
+                    矢量数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="collection.html">
+            
+                <a href="collection.html">
+            
+                    
+                    Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="enum.html">
+            
+                <a href="enum.html">
+            
+                    
+                    枚举
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="error-and-exception.html">
+            
+                <a href="error-and-exception.html">
+            
+                    
+                    错误与异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="generics.html">
+            
+                <a href="generics.html">
+            
+                    
+                    泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="reflect.html">
+            
+                <a href="reflect.html">
+            
+                    
+                    反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="serialize.html">
+            
+                <a href="serialize.html">
+            
+                    
+                    序列化和反序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="servlet.html">
+            
+                <a href="servlet.html">
+            
+                    
+                    Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.12" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    线程与多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../subject/">
+            
+                <a href="../subject/">
+            
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../subject/javadoc.html">
+            
+                <a href="../subject/javadoc.html">
+            
+                    
+                    创建文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../classes/">
+            
+                <a href="../classes/">
+            
+                    
+                    类与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../snippets/">
+            
+                <a href="../snippets/">
+            
+                    
+                    代码片断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../snippets/io.html">
+            
+                <a href="../snippets/io.html">
+            
+                    
+                    IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../terms.html">
+            
+                <a href="../terms.html">
+            
+                    
+                    概念与术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >线程与多线程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7EBF;&#x7A0B;&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;">&#x7EBF;&#x7A0B;&#x4E0E;&#x591A;&#x7EBF;&#x7A0B;</h1>
+<h2 id="&#x901A;&#x8FC7;&#x5B9E;&#x73B0;-runnable-&#x63A5;&#x53E3;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;">&#x901A;&#x8FC7;&#x5B9E;&#x73B0; Runnable &#x63A5;&#x53E3;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">// &#xFF08;1&#xFF09;&#x5B9E;&#x73B0; Runnable &#x63A5;&#x53E3;&#x3002;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RunnableDemo</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+    <span class="hljs-keyword">private</span> Thread t;
+    <span class="hljs-keyword">private</span> String threadName;
+
+    RunnableDemo(String name) {
+        threadName = name;
+        System.out.println(<span class="hljs-string">&quot;Creating &quot;</span> + threadName);
+    }
+
+    <span class="hljs-comment">// &#xFF08;2&#xFF09;&#x5B9E;&#x73B0; Runnable &#x63A5;&#x53E3;&#x6240;&#x8981;&#x6C42;&#x7684; run() &#x65B9;&#x6CD5;&#x3002;</span>
+    <span class="hljs-comment">// &#x7EBF;&#x7A0B;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5C06;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x4E2D;&#x6267;&#x884C;&#x3002;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Running &quot;</span> + threadName);
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">4</span>; i &gt; <span class="hljs-number">0</span>; i--) {
+                System.out.println(<span class="hljs-string">&quot;Thread: &quot;</span> + threadName + <span class="hljs-string">&quot;, &quot;</span> + i);
+                <span class="hljs-comment">// Let the thread sleep for a while.</span>
+                Thread.sleep(<span class="hljs-number">50</span>);
+            }
+        } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+            System.out.println(<span class="hljs-string">&quot;Thread &quot;</span> + threadName + <span class="hljs-string">&quot; interrupted.&quot;</span>);
+        }
+        System.out.println(<span class="hljs-string">&quot;Thread &quot;</span> + threadName + <span class="hljs-string">&quot; exiting.&quot;</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">start</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Starting &quot;</span> + threadName);
+        <span class="hljs-keyword">if</span> (t == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-comment">// &#xFF08;3&#xFF09;&#x5C06; Runnable &#x5B9E;&#x4F8B;&#x88C5;&#x5165;&#x7EBF;&#x7A0B;&#xFF0C;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x5B9E;&#x4F8B;&#xFF0C;</span>
+            t = <span class="hljs-keyword">new</span> Thread(<span class="hljs-keyword">this</span>, threadName);
+            <span class="hljs-comment">// &#xFF08;4&#xFF09;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;&#x3002;</span>
+            t.start();
+        }
+    }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestThread</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        RunnableDemo R1 = <span class="hljs-keyword">new</span> RunnableDemo(<span class="hljs-string">&quot;Thread-1&quot;</span>);
+        R1.start();
+
+        RunnableDemo R2 = <span class="hljs-keyword">new</span> RunnableDemo(<span class="hljs-string">&quot;Thread-2&quot;</span>);
+        R2.start();
+    }
+}
+
+<span class="hljs-comment">// &#x4EE3;&#x7801;&#x5F15;&#x81EA; https://www.tutorialspoint.com/java/java_multithreading.htm</span>
+</code></pre>
+<h2 id="&#x901A;&#x8FC7;&#x7EE7;&#x627F;-thread-&#x7C7B;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;">&#x901A;&#x8FC7;&#x7EE7;&#x627F; Thread &#x7C7B;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;</h2>
+<pre><code class="lang-java"><span class="hljs-comment">// &#xFF08;1&#xFF09;&#x7EE7;&#x627F; Thread &#x7C7B;&#x3002;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThreadDemo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+    <span class="hljs-keyword">private</span> String threadName;
+
+    ThreadDemo(String name) {
+        threadName = name;
+        System.out.println(<span class="hljs-string">&quot;Creating &quot;</span> + threadName);
+    }
+
+    <span class="hljs-comment">// &#xFF08;2&#xFF09;&#x8986;&#x76D6;&#x7236;&#x7C7B;&#x7684; run() &#x65B9;&#x6CD5;&#x3002;</span>
+    <span class="hljs-comment">// &#x7EBF;&#x7A0B;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5C06;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x4E2D;&#x6267;&#x884C;&#x3002;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Running &quot;</span> + threadName);
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">4</span>; i &gt; <span class="hljs-number">0</span>; i--) {
+                System.out.println(<span class="hljs-string">&quot;Thread: &quot;</span> + threadName + <span class="hljs-string">&quot;, &quot;</span> + i);
+                <span class="hljs-comment">// Let the thread sleep for a while.</span>
+                Thread.sleep(<span class="hljs-number">50</span>);
+            }
+        } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+            System.out.println(<span class="hljs-string">&quot;Thread &quot;</span> + threadName + <span class="hljs-string">&quot; interrupted.&quot;</span>);
+        }
+        System.out.println(<span class="hljs-string">&quot;Thread &quot;</span> + threadName + <span class="hljs-string">&quot; exiting.&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MT</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+        ThreadDemo T1 = <span class="hljs-keyword">new</span> ThreadDemo(<span class="hljs-string">&quot;Thread-1&quot;</span>);
+        <span class="hljs-comment">// &#xFF08;3&#xFF09;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;&#xFF0C;run() &#x5C06;&#x5728;&#x7EBF;&#x7A0B;&#x4E2D;&#x88AB;&#x6267;&#x884C;&#x3002;</span>
+        T1.start();
+
+        ThreadDemo T2 = <span class="hljs-keyword">new</span> ThreadDemo(<span class="hljs-string">&quot;Thread-2&quot;</span>);
+        T2.start();
+    }
+}
+</code></pre>
+<script>
+	var BAIDU_TONGJI_TOKEN;
+	var tracers = [{"token":"14e1e69c9ea9f2f43cbf24b5257e7205","host":"youngoat.github.io"}];
+	tracers.forEach(function(tracer) {
+		var matched = true
+			&& (!tracer.host || tracer.host == window.location.host)
+			&& (!tracer.protocol || tracer.protocol == window.location.protocol)
+			&& (!tracer.port || tracer.port == window.location.port)
+			&& (!tracer.path || tracer.path == window.location.path.substr(0, tracer.path.length))
+			;
+
+		if (matched) {
+			BAIDU_TONGJI_TOKEN = tracer.token;
+		}
+	});
+</script>
+<script>
+if (BAIDU_TONGJI_TOKEN) {
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?" + BAIDU_TONGJI_TOKEN;
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+}
+</script>
+<script>
+	var GA_TOKEN;
+	var tracers = [{"token":"UA-80152063-2","host":"youngoat.github.io"}];
+	tracers.forEach(function(tracer) {
+		var matched = true
+			&& (!tracer.host || tracer.host == window.location.host)
+			&& (!tracer.protocol || tracer.protocol == window.location.protocol)
+			&& (!tracer.port || tracer.port == window.location.port)
+			&& (!tracer.path || tracer.path == window.location.path.substr(0, tracer.path.length))
+			;
+
+		if (matched) {
+			GA_TOKEN = tracer.token;
+		}
+	});
+</script>
+<script>
+if (GA_TOKEN) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', GA_TOKEN, 'auto');
+  ga('send', 'pageview');
+}
+</script>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="servlet.html" class="navigation navigation-prev " aria-label="Previous page: Servlet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../subject/" class="navigation navigation-next " aria-label="Next page: 专题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"线程与多线程","level":"1.6.12","depth":2,"next":{"title":"专题","level":"1.7","depth":1,"path":"subject/index.md","ref":"subject/index.md","articles":[{"title":"创建文档","level":"1.7.1","depth":2,"path":"subject/javadoc.md","ref":"subject/javadoc.md","articles":[]}]},"previous":{"title":"Servlet","level":"1.6.11","depth":2,"path":"syntax/servlet.md","ref":"syntax/servlet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","catalog","analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":{"token":"UA-80152063-2","host":"youngoat.github.io"},"baidu":{"token":"14e1e69c9ea9f2f43cbf24b5257e7205","host":"youngoat.github.io"}},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":2},"highlight":{},"catalog":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"A Cup Of JAVA","links":{"sidebar":{"HOME":"https://youngoat.github.io"}},"gitbook":"*"},"file":{"path":"syntax/thread.md","mtime":"2017-01-10T12:09:37.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-01-20T17:47:23.842Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-catalog/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
