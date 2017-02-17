@@ -35,7 +35,7 @@ h4 {
 }
 
 h1,h2,h3,h4 {
-	/*font-family: "American Typewriter", "Source Sans Pro", "Lucida Grande", Helvetica, Arial, "Palatino Linotype", "微软雅黑";*/
+	font-family: "American Typewriter", "Source Sans Pro", "Lucida Grande", Helvetica, Arial, "Palatino Linotype", "微软雅黑";
 	letter-spacing: 0;
 }
 
@@ -48,4 +48,11 @@ blockquote em {
 	color: #666666;
 	font-weight: bold;
 	font-style: italic !important;
+}
+
+.glossary-term {
+	text-decoration: none !important;
+}
+.glossary-term:hover {
+	text-decoration: underline !important;
 }
