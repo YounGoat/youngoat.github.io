@@ -13,7 +13,9 @@ permalink: /works/
     <small>NodeJS SDK for CLI development</small>
 
 <small>
-See my profile at NPM for more packages:  
-*	[https://www.npmjs.com/~youngoat](https://www.npmjs.com/~youngoat)  
-*	[https://www.npmjs.com/~youngoat.elite](https://www.npmjs.com/~youngoat.elite)  
+
+	See my profile at NPM for more packages:  
+	*	[https://www.npmjs.com/~youngoat](https://www.npmjs.com/~youngoat)  
+	*	[https://www.npmjs.com/~youngoat.elite](https://www.npmjs.com/~youngoat.elite)  
+
 </small>

@@ -257,7 +257,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="symbol.html">
+        <li class="chapter " data-level="1.3.3" data-path="stream.html">
+            
+                <a href="stream.html">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="symbol.html">
             
                 <a href="symbol.html">
             
@@ -373,7 +386,33 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../json-schema.html">
+        <li class="chapter " data-level="3.3" data-path="../d3/">
+            
+                <a href="../d3/">
+            
+                    
+                    D3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../electron/">
+            
+                <a href="../electron/">
+            
+                    
+                    Electron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../json-schema.html">
             
                 <a href="../json-schema.html">
             
@@ -386,7 +425,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../jsx/">
+        <li class="chapter " data-level="3.6" data-path="../jsx/">
             
                 <a href="../jsx/">
             
@@ -400,7 +439,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.1" data-path="../jsx/dena.md">
+        <li class="chapter " data-level="3.6.1" data-path="../jsx/dena.md">
             
                 <span>
             
@@ -413,7 +452,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.2" data-path="../jsx/react.html">
+        <li class="chapter " data-level="3.6.2" data-path="../jsx/react.html">
             
                 <a href="../jsx/react.html">
             
@@ -431,7 +470,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="../reactjs/">
+        <li class="chapter " data-level="3.7" data-path="../reactjs/">
             
                 <a href="../reactjs/">
             
@@ -445,7 +484,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.5.1" data-path="../reactjs/starter-kit.html">
+        <li class="chapter " data-level="3.7.1" data-path="../reactjs/starter-kit.html">
             
                 <a href="../reactjs/starter-kit.html">
             
@@ -458,7 +497,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5.2" data-path="../reactjs/tutorial.html">
+        <li class="chapter " data-level="3.7.2" data-path="../reactjs/tutorial.html">
             
                 <a href="../reactjs/tutorial.html">
             
@@ -476,7 +515,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="../typescript/">
+        <li class="chapter " data-level="3.8" data-path="../typescript/">
             
                 <a href="../typescript/">
             
@@ -490,7 +529,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.6.1" data-path="../typescript/tsconfig.html">
+        <li class="chapter " data-level="3.8.1" data-path="../typescript/tsconfig.html">
             
                 <a href="../typescript/tsconfig.html">
             
@@ -503,7 +542,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6.2" data-path="../typescript/decorator.html">
+        <li class="chapter " data-level="3.8.2" data-path="../typescript/decorator.html">
             
                 <a href="../typescript/decorator.html">
             
@@ -516,7 +555,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6.3" data-path="../typescript/tools.html">
+        <li class="chapter " data-level="3.8.3" data-path="../typescript/tools.html">
             
                 <a href="../typescript/tools.html">
             
@@ -787,23 +826,65 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x8BED;&#x6CD5;&#x7BC7;">&#x8BED;&#x6CD5;&#x7BC7;</h1>
-<script>
-	var BAIDU_TONGJI_TOKEN;
-	var tracers = [{"token":"14e1e69c9ea9f2f43cbf24b5257e7205","host":"youngoat.github.io"}];
-	tracers.forEach(function(tracer) {
-		var matched = true
-			&& (!tracer.host || tracer.host == window.location.host)
-			&& (!tracer.protocol || tracer.protocol == window.location.protocol)
-			&& (!tracer.port || tracer.port == window.location.port)
-			&& (!tracer.path || tracer.path == window.location.path.substr(0, tracer.path.length))
-			;
-
-		if (matched) {
-			BAIDU_TONGJI_TOKEN = tracer.token;
+<script>var GA_TOKEN;
+[{"token":"UA-80152063-2","host":["youngoat.github.io"]}].forEach(function(T) {
+	var L = window.location;
+	var M = true
+		&& (!T.host || T.host.indexOf(L.host) >= 0)
+		&& (!T.hostname || T.hostname.indexOf(L.hostname) >= 0)
+		&& (!T.protocol || T.protocol.indexOf(L.protocol) >= 0)
+		&& (!T.port || T.port.indexOf(L.port) >= 0)
+		;
+	if (T.base && M) {
+		M = false;
+		for (var i = 0; i < T.base.length; i++) {
+			M = M || L.href.startsWith(T.base[i]);
 		}
-	});
-</script>
-<script>
+	}
+	if (T.path && M) {
+		M = false;
+		for (var i = 0; i < T.path.length; i++) {
+			M = M || L.pathname.startsWith(T.path[i]);
+		}
+	}
+	if (M) {
+		GA_TOKEN = T.token;
+	}
+});
+if (GA_TOKEN) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', GA_TOKEN, 'auto');
+	ga('send', 'pageview');
+}
+</script><script>var BAIDU_TONGJI_TOKEN;
+[{"token":"14e1e69c9ea9f2f43cbf24b5257e7205","host":["youngoat.github.io"]}].forEach(function(T) {
+	var L = window.location;
+	var M = true
+		&& (!T.host || T.host.indexOf(L.host) >= 0)
+		&& (!T.hostname || T.hostname.indexOf(L.hostname) >= 0)
+		&& (!T.protocol || T.protocol.indexOf(L.protocol) >= 0)
+		&& (!T.port || T.port.indexOf(L.port) >= 0)
+		;
+	if (T.base && M) {
+		M = false;
+		for (var i = 0; i < T.base.length; i++) {
+			M = M || L.href.startsWith(T.base[i]);
+		}
+	}
+	if (T.path && M) {
+		M = false;
+		for (var i = 0; i < T.path.length; i++) {
+			M = M || L.pathname.startsWith(T.path[i]);
+		}
+	}
+	if (M) {
+		BAIDU_TONGJI_TOKEN = T.token;
+	}
+});
 if (BAIDU_TONGJI_TOKEN) {
 	var _hmt = _hmt || [];
 	(function() {
@@ -814,34 +895,6 @@ if (BAIDU_TONGJI_TOKEN) {
 	})();
 }
 </script>
-<script>
-	var GA_TOKEN;
-	var tracers = [{"token":"UA-80152063-2","host":"youngoat.github.io"}];
-	tracers.forEach(function(tracer) {
-		var matched = true
-			&& (!tracer.host || tracer.host == window.location.host)
-			&& (!tracer.protocol || tracer.protocol == window.location.protocol)
-			&& (!tracer.port || tracer.port == window.location.port)
-			&& (!tracer.path || tracer.path == window.location.path.substr(0, tracer.path.length))
-			;
-
-		if (matched) {
-			GA_TOKEN = tracer.token;
-		}
-	});
-</script>
-<script>
-if (GA_TOKEN) {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', GA_TOKEN, 'auto');
-  ga('send', 'pageview');
-}
-</script>
-
                                 
                                 </section>
                             
@@ -884,7 +937,7 @@ if (GA_TOKEN) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"语法篇","level":"1.3","depth":1,"next":{"title":"GeneratorFunction","level":"1.3.1","depth":2,"path":"syntax/generator-function/index.md","ref":"syntax/generator-function/index.md","articles":[{"title":"ERROR: Generator is already running","level":"1.3.1.1","depth":3,"path":"syntax/generator-function/generator-is-already-running.md","ref":"syntax/generator-function/generator-is-already-running.md","articles":[]}]},"previous":{"title":"NPM3","level":"1.2.2.2","depth":3,"path":"npm/npm3.md","ref":"npm/npm3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","catalog","analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":{"token":"UA-80152063-2","host":"youngoat.github.io"},"baidu":{"token":"14e1e69c9ea9f2f43cbf24b5257e7205","host":"youngoat.github.io"}},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":2},"highlight":{},"catalog":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"A Brief History Of Node.js","links":{"sidebar":{"HOME":"https://youngoat.github.io"}},"gitbook":"*"},"file":{"path":"syntax/index.md","mtime":"2017-01-13T05:55:13.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-01-20T17:48:33.709Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"语法篇","level":"1.3","depth":1,"next":{"title":"GeneratorFunction","level":"1.3.1","depth":2,"path":"syntax/generator-function/index.md","ref":"syntax/generator-function/index.md","articles":[{"title":"ERROR: Generator is already running","level":"1.3.1.1","depth":3,"path":"syntax/generator-function/generator-is-already-running.md","ref":"syntax/generator-function/generator-is-already-running.md","articles":[]}]},"previous":{"title":"NPM3","level":"1.2.2.2","depth":3,"path":"npm/npm3.md","ref":"npm/npm3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","catalog","analytics","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"analytics":{"google":{"token":"UA-80152063-2","host":["youngoat.github.io"]},"baidu":{"token":"14e1e69c9ea9f2f43cbf24b5257e7205","host":["youngoat.github.io"]}},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"size":2},"highlight":{},"catalog":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"A Brief History Of Node.js","links":{"sidebar":{"HOME":"https://youngoat.github.io"}},"gitbook":"*"},"file":{"path":"syntax/index.md","mtime":"2017-01-13T05:55:13.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-03-17T06:54:29.817Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -899,6 +952,10 @@ if (GA_TOKEN) {
     
         
         <script src="../gitbook/gitbook-plugin-catalog/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

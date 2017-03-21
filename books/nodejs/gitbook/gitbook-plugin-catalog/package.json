@@ -12,7 +12,6 @@
       "/Users/jiangjing/JPO/WorkingSpace/YUAN.book/nodejs.history"
     ]
   ],
-  "_cnpm_publish_time": 1417151448161,
   "_from": "gitbook-plugin-catalog@0.1.2",
   "_id": "gitbook-plugin-catalog@0.1.2",
   "_inCache": true,
@@ -55,10 +54,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "noattachment": false,
     "shasum": "d358bdfacb1cbe9e08af95f4f0be5c858b454758",
-    "size": 3536,
-    "tarball": "http://registry.npm.taobao.org/gitbook-plugin-catalog/download/gitbook-plugin-catalog-0.1.2.tgz"
+    "tarball": "https://registry.npmjs.org/gitbook-plugin-catalog/-/gitbook-plugin-catalog-0.1.2.tgz"
   },
   "engines": {
     "gitbook": "*"
@@ -74,7 +71,6 @@
   ],
   "name": "gitbook-plugin-catalog",
   "optionalDependencies": {},
-  "publish_time": 1417151448161,
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
