@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "My NPM Works"
+date:   2017-04-23
+categories: diary
+---
+
+{% for pkg in site.data.npm %}
+<div style="float:left; margin-bottom:1em; padding-right:1em;"><a href="https://www.npmjs.com/package/{{ pkg.name }}"><img style="width:22em; height:6em;" src="https://nodei.co/npm-dl/{{ pkg.name }}.png?months=3&height=3"/></a></div>
+{% endfor %}
